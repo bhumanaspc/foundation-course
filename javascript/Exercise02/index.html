@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript</title>
+  </head>
+  <body>
+    <p id="p2">Hello World</p>
+    <button type="button" class="btn" onclick="changeColor()">
+      Toggle Color
+    </button>
+
+    <script>
+      var elem = document.getElementById("p2");
+
+      function changeColor() {
+        if (elem.style.backgroundColor) {
+          elem.style.backgroundColor = "";
+        } else {
+          elem.style.backgroundColor = "red";
+        }
+      }
+    </script>
+  </body>
+</html>
